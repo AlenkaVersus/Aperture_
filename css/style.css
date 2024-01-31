@@ -28,7 +28,7 @@ header nav ul li{
     margin-left: 32px;
     padding: 15px 0px;
 }
-header nav ul li:nth-child{
+header nav ul li:nth-child(2){
     margin-left: 56px;
 }
 header nav ul li a{
@@ -54,16 +54,21 @@ header nav ul li:last-of-type a {
     line-height: 20px; /* 125% */
     letter-spacing: 0.4px;
 }
-.section_1{
-    background: #000000;
+.studios{
     background-image: url("../images/sect1_bg.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 71px;
 }
-.section_1 .box_1{
-    padding: 466px 0px 61px;
+.studios article{
+    max-width: 580px;
+    text-align: center;
 }
-.subtitle_1{
+.studios article h2{
     color: #C0C0C0;
     text-align: center;
     font-family: Poppins;
@@ -75,7 +80,7 @@ header nav ul li:last-of-type a {
     text-transform: uppercase;
     margin-bottom: 1px;
 }
-.section_1 h1{
+.studios article h1{
     margin-bottom: 18px;
     color: #FFF;
     text-align: center;
@@ -85,7 +90,7 @@ header nav ul li:last-of-type a {
     font-weight: 400;
     line-height: 59px; /* 110% */
 }
-.subtitle_2{
+.studios article p{
     max-width: 580px;
     margin: auto;
     color: #C0C0C0;
@@ -96,31 +101,43 @@ header nav ul li:last-of-type a {
     font-weight: 400;
     line-height: 20px; /* 142.857% */
 }
-.sec_navig{
-    max-width:1440px;
-    margin: auto;
-    padding-right: 40px;
+.icon_list{
+    display: flex;
+    list-style: none;
+    margin-left: 24px;
+    position: absolute;
+    right: 46px;
+    bottom: 46px;
+    flex-wrap: wrap;
 }
-.sec_navig ul li p{
+.icon_list li{
     color: #FFF;
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 100% */
+    margin-left: 20px;
 }
-.sec_navig ul{
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    margin-left: 24px;
-    align-items: center;
-    flex-wrap: wrap;
+
+.icon_list li:before{
+    content: url("../images/clock.svg");
+    position: relative;
+    top: 6px;
+    right: 4px;
 }
-.sec_navig ul li{
-    display: flex;
-    margin-left: 32px;
-    align-items: center;
+
+.icon_list li:nth-child(2)::before{
+    content: url("../images/round.svg");
 }
+
+.icon_list li:nth-child(3)::before{
+    content: url("../images/ISO.svg");
+}
+
+.icon_list li:last-child::before{
+    content: url("../images/location.svg");
+}
+
 
 
