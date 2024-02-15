@@ -27,5 +27,5 @@ header nav ul li:last-of-type {
     bottom: 26px;}}
 @media screen and (max-width: 508px){
 .clients_logo {
-    padding: 0px;
+  padding-right: 130px;
 }}
