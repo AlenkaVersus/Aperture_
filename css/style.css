@@ -7,6 +7,9 @@
     max-width:1200px;
     margin:auto;
 }
+body{
+    background: #181818;
+}
 header{
     background: #181818;
 }
@@ -203,6 +206,9 @@ header nav ul li:last-of-type a {
     max-width: 128px;
     width: auto;
     display: inline-block;
+}
+.cd-3d-nav-trigger{
+    display: none;
 }
 
 

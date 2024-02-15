@@ -4,3 +4,28 @@
     font-style: normal;
     font-weight: 400;
 }
+@media screen and (max-width: 508px) {
+    header nav ul li{
+        margin-left: 0px;
+    }
+    header nav ul li:nth-child(2){
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 508px) {
+header nav ul li:last-of-type {
+    background: none;
+}}
+@media screen and (max-width: 508px) {
+    .wrapper_past{
+        max-width: 428px;
+        text-align: center
+    }
+}
+@media screen and (max-width: 508px){
+.icon_list {
+    bottom: 26px;}}
+@media screen and (max-width: 508px){
+.clients_logo {
+    padding: 0px;
+}}
